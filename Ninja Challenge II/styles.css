@@ -1,0 +1,14 @@
+.background {
+    width: 900px; 
+    height: 750px; 
+    background-image: url('img/white_bg.jpg');
+}
+
+.character {
+    width: 59px; 
+    height: 86px; 
+    background-image: url('img/down1.png'); 
+    position: absolute; 
+    left: 150px; 
+    top: 150px;
+}

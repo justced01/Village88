@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+    background-color: black;
+}
+
+body {
+    color: white;
+    text-align: center;
+}
+
+.title {
+    width: 185px;
+    height: 60px;
+    margin: 15px auto 0 auto;
+    background: url("./assets/sprites/message.png");
+}
+
+.background {
+    width: 300px;
+    height: 500px;
+    margin: 50px auto 0 auto;
+    background: url("./assets/sprites/background-day.png") repeat-x;
+    overflow: hidden;
+}
+
+.baseline {
+    position: relative;
+    top: 280px;
+    width: 300px;
+    height: 120px;
+    margin: 25px auto;
+    background: url("./assets/sprites/base.png");
+}
+
+/* @keyframes baseline {
+    100% { left: 490px }
+    100% { left: -50px }
+} */
+
+.flappy_bird {
+    position: absolute;
+    top: 300px;
+    left: 505px;
+    width: 34px;
+    height: 24px;
+    background: url("./assets/sprites/yellowbird-1.png");
+}
+
+@keyframes rotateUp {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(-35deg); }
+}
+
+@keyframes rotateDown {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(35deg); }
+}
+
+.score1 {
+    position: absolute;
+    top: 130px;
+    left: 620px;
+    width: 24px;
+    height: 36px;
+    background-image: url("./assets/sprites/0.png");
+    background-repeat: no-repeat;
+    z-index: 2;
+}
+
+.score2 {
+    position: absolute;
+    top: 130px;
+    left: 645px;
+    width: 24px;
+    height: 36px;
+    background-image: url("./assets/sprites/0.png");
+    background-repeat: no-repeat;
+    z-index: 2;
+}
+
+.obstacle-north {
+    position: absolute;
+    top: 50px;
+    left: 850px;
+    width: 52px;
+    height: 200px;
+    visibility: hidden;
+    background-image: url("./assets/sprites/pipe-green.png");
+    transform: rotateX(180deg);
+}
+
+.obstacle-south {
+    position: absolute;
+    top: 400px;
+    left: 800px;
+    width: 52px;
+    height: 200px;
+    visibility: hidden;
+    background-image: url("./assets/sprites/pipe-green.png");
+}
+

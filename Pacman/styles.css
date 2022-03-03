@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    outline: none;
+}
+body {
+    background-color: black;
+    margin: 0px;
+}
+
+main {
+    color: white;
+}
+
+.title {
+    font-family: Impact;
+    letter-spacing: 5px;
+    text-align: center;
+    color: #fff;
+}
+
+.row div {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-bottom: -4px;
+}
+
+.brick {
+    background-color: navy;
+    animation: blinker 1s linear infinite;
+}
+@keyframes blinker {
+    50% {
+        opacity: 0.8;
+    }
+}
+
+.pellet {
+    background: url("./img/other/dot.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+}
+
+.pacman {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+
+    background: url("./img/pacman-right/1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.blinky {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+
+    background: url("./img/ghosts/blinky.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.fruit {
+    background: url("./img/other/apple.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.scores {
+    width: 70px;
+    height: 30px;
+    margin: 5px 0 0 0;
+
+    text-align: center;
+
+    color: white;
+    border: 1px solid #fff;
+}

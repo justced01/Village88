@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+header {
+    margin: 100px 0 0 0;
+    text-align: center;
+}
+
+.title {
+    font-family: Impact;
+    color: #fff;
+}
+
+body {
+    background-color: black;
+}
+
+.background {
+    width: 800px;
+    height: 260px;
+    margin: 20px auto 0 auto;
+
+    background: url('./img/background_blanka.gif');
+    background-size: cover;
+}
+
+.character1 {
+    background: url('./img/ken.png') 0px -80px;
+    width: 70px;
+    height: 80px;
+    position: absolute;
+}
+
+.healthbar1 {
+    width: 200px;
+    height: 15px;
+    background-color:lightgreen;
+    border: 3px solid green;
+    position: absolute;
+    top: 200px;
+    left: 300px;
+}
+
+.character2 {
+    background: url('./img/ken.png') 0px -80px;
+    width: 70px;
+    height: 80px;
+    position: absolute;
+}
+
+.healthbar2 {
+    width: 200px;
+    height: 15px;
+    background-color:pink;
+    border: 3px solid red;
+    position: absolute;
+    top: 200px;
+    left: 750px;
+}
+
+.hadouken {
+    background: url('./img/ken.png') 0px -320px;
+    width: 70px;
+    height: 80px;
+    position: absolute;
+}

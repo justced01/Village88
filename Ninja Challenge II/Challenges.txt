@@ -1,0 +1,5 @@
+Ninja Challenge II
+Challenges
+1. How would you add the direction of top?
+2. Our Ninja is moving, but it doesn't look like he's walking. 
+    What would you change to make the ninja look like he's walking?
