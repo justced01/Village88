@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    Background-color: #262626;
+}
+.success {
+    color: lime;
+}
+
+.errors {
+    color: red;
+}
+
+.wrapper {
+    width: 80%;
+    height: 778px;
+    margin: 20px auto;
+}
+    aside, section {
+        background-color: #fff;
+    }
+    aside, section {
+        display: inline-block;
+        vertical-align: top;
+    }
+    aside {
+        width: 20%;
+        height: 100%;
+        padding: 20px 15px;
+        border: 1px solid aqua;
+        border-radius: 10px 0 0 10px;
+    }
+    section {
+        width: 70%;
+        border: 1px solid aqua;
+        border-radius: 0 10px 10px 0;
+        text-align: center;
+    }
+        .player-cards {
+            display: inline-block;
+            vertical-align: top;
+            width: 15%;
+            margin: 10px 5px;
+            padding: 10px 0;
+            text-align: center;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+            border-radius: 10px;
+            background-color: #1B1B1B;
+            color: #fff;
+        }
+            .player-cards img {
+                width: 100%;
+            }
+
+

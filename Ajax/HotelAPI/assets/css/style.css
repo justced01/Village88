@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.wrapper {
+    padding: 50px;
+}
+
+h1 {
+    margin: 10px 0;
+    display: none;
+}
+.success {
+    color: lime;
+}
+
+.fail {
+    color: red;
+}

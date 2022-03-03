@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.wrapper {
+    width: 50%;
+    margin: 100px auto;
+}
+    header {
+        border-bottom: 1px solid silver;
+        padding-bottom: 10px;
+    }
+        header * {
+            display: inline-block;
+        }
+        .filter-form {
+            margin-left: 50px;
+        }
+            .filter-form input {
+                margin: 0 3px;
+            }
+            .filter-form select {
+                margin-left: 15px;
+            }
+            .filter-form input[type=submit] {
+                margin-left: 20px;
+                padding: 7px;
+                border: none;
+                border-bottom: 1px solid darkgray;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+    .wrapper table {
+        margin: 20px 0;
+        width: 100%;
+        border-collapse: collapse;
+    }
+        .wrapper table th, .wrapper table td {
+            padding: 7px;
+            border: 1px solid silver;
+        }
+    .show-form {
+        padding: 5px;
+    }
+        .show-form input {
+            width: 100%;
+            padding: 7px;
+            border: none;
+            border-bottom: 1px solid darkgray;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+#count {
+    visibility: hidden;
+}

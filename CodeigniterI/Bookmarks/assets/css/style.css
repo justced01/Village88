@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.wrapper {
+    width: 60%;
+    margin: 100px auto;
+    padding: 10px;
+    border: 4px solid #000;
+}
+    .error {
+        margin: 5px 0;
+        color: red;
+    }
+    .add-form {
+        margin-bottom: 30px;
+        padding: 20px;
+    }
+        .input-group {
+            margin: 10px 0;
+        }
+            .input-group label {
+                display: inline-block;
+                width: 10%;
+                font-size: 20px;
+                font-weight: bold;
+            }
+            .input-group input {
+                width: 40%;
+                height: 25px;
+                padding: 0 5px;
+            }
+            .add-form input[type=submit]{
+                display: block;
+                margin-left: 46%;
+                padding: 5px;
+                box-shadow: 2px 2px 0 #000;
+            }
+            .add-form select {
+                height: 25px;
+                padding: 0 5px;
+            }
+    h2 {
+        margin: 10px 0;
+        text-align: center;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    .thead {
+        background-color: skyblue;
+    }
+    tr {
+        background-color: rgb(235, 235, 235);
+    }
+    tr:nth-child(2n) {
+        background-color: lightgray;
+    }
+        table th, table td {
+            border: 1px solid gray;
+        }
+        table td{
+            padding: 2px;
+        }
+
+        table a, .row a {
+            color: blue;
+        }
+/* Destroy */
+.row {
+    text-align: center;
+}
+
+.confirm-form, .cancel-form {
+    display: inline-block;
+    margin: 20px auto;
+    text-align: center;
+}
+.cancel-form {
+    margin-left: 320px;
+}
+    .confirm-form input[type=submit], .cancel-form input[type=submit]{
+        margin: 0 50px;
+        padding: 5px;
+        box-shadow: 2px 2px #000;
+    }
+    .delBtn {
+        color: #fff;
+        background-color: red;
+    }

@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+body {
+    background-color: #3A2340;
+    background: radial-gradient(circle, rgba(58,35,64,1) 0%, rgba(104,73,112,1) 100%);
+}
+
+header, main {
+    width: 80%;
+    margin: 0 auto;
+    font-family: sans-serif;
+}
+header {
+    padding: 20px 0;
+    color: #ffff40;
+}
+    header h1 {
+        font-size: 60px;
+        font-family: Helvetica;
+        text-align: center;
+        text-transform: uppercase;
+        -webkit-text-stroke: 2px rgb(70, 57, 92);
+    }
+    header h3 {
+        width: 65%;
+    }
+    header h3, header p {
+        margin: 0 0 10px 190px ;
+    }
+    header h3, header button {
+        display: inline-block;
+    }
+    .reset {
+        display: inline-block;
+    }
+        .reset input[type=submit]{
+            padding: 5px;
+            border: none;
+            box-shadow: 2px 2px 0px #000;
+            color: #fff;
+            background-color: red;
+            cursor: pointer;
+        }
+main {
+    background-color: beige;
+    padding: 10px 0;
+}
+    section{
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+        section form {
+            display: inline-block;
+            width: 20%;
+            margin: 10px;
+            padding: 10px 0;
+            text-align: center;
+            border: 4px solid #000;
+        }
+            section form * {
+                margin: 10px 0;
+            }
+            section form input[type=submit]{
+                padding: 5px 10px;
+                border: none;
+                box-shadow: 2px 2px 0px #000;
+                color: #fff;
+                background-color: green;
+                cursor: pointer;
+            }
+    main h3, .game-host {
+        width: 70%;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 5px;
+    }
+    .game-host {
+        margin-bottom: 40px;
+        height: 300px;
+        width: 70%;
+        border: 4px solid #000;
+        overflow: auto;
+    }
+    .color_0 {
+        color: red;
+    }
+    .color_1 {
+        color: green;
+    }

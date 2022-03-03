@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.wrapper {
+    width: 70%;
+    margin: 0 auto;
+    padding: 50px;
+}
+    form * {
+        width: 60%;
+        margin: 10px auto;
+    }
+
+    form input {
+        display: block;
+    }
+    .http-table, .http-response {
+        display: inline-block;
+        width: 45%;
+        vertical-align: top;    
+    }
+        .http-table table {
+            width: 60%;
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+            .http-table table th, .http-table table td {
+                padding: 5px;
+                border: 1px solid silver;
+            }
+    .http-response textarea, .http-table textarea {
+        width: 100%;
+        height: 500px;
+    }
+
+.success {
+    color: lime;
+}
+
+.fail {
+    color: red;
+}

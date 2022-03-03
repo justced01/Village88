@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.success {
+    margin-top: 20px;
+    text-align: right;
+    color: green;
+}
+
+.errors {
+    margin-top: 20px;
+    text-align: right;
+    color: red;
+}
+    .errors p {
+        display: inline-block;
+    }
+.wrapper {
+    width: 45%;
+    margin: 0 auto;
+}
+    .dateform {
+        margin-top: 20px;
+        text-align: right;
+    }
+        .dateform input[type=text]{
+            padding: 5px;
+        }
+        .dateform input[type=submit]{
+            padding: 5px;
+            background-color: rgb(70, 70, 253);
+            color: white;
+            cursor: pointer;
+        }
+        .ui-datepicker-trigger {
+            width: 35px;
+            vertical-align: middle;
+        }
+    h2 {
+        margin: 7px 0;
+        text-decoration: underline;
+    }
+    table {
+        width: 50%;
+        border-collapse: collapse;
+    }
+        table th, table td {
+            padding: 5px;
+            border: 2px solid darkgrey;
+        }
+        table th {
+            background-color: lightgrey;
+        }
+
+    #billingChart {
+        margin: 20px 0;
+    }

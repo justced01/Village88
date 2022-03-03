@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 60%;
+}
+    h1 {
+        margin: 10px 0;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    h2, h3 {
+        margin: 20px 0;
+    }
+    .input-fields, .update-btn, .create-form input[type="submit"] {
+        margin: 10px 0;
+    }
+    form input, form textarea {
+        display: block;
+        width: 300px;
+    }
+    form textarea {
+        height: 80px;
+    }
+    .create-form {
+        width: 30%;
+        margin: 5px 0;
+        padding: 10px;
+        border: 1px solid silver;
+        border-radius: 5px;
+        background-color: aliceblue;
+    }
+        .create-form * {
+            width: 100%;
+        }
+        .create-form input[type="text"], .create-form textarea {
+            padding: 5px;
+        } 
+    .form-notes {
+        display: inline-block;
+        width: 30%;
+        margin: 5px 0;
+        padding: 7px;
+        border: 1px solid silver;
+        border-radius: 5px;
+        background-color: aliceblue;
+    }
+        .form-notes form {
+            width: 95%;
+            margin: 0 auto;
+        }
+            .form-notes form * {
+                width: 100%;
+            }
+            .form-notes input[type="submit"], .create-form input[type="submit"] {
+                padding: 5px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                color: #fff;
+            }
+            .update-btn, .create-form input[type="submit"] {
+                background-color: skyblue;
+            }
+            .remove-btn {
+                background-color: lightcoral;
+            }
+.success {
+    color: green;
+}
+
+.errors {
+    color: red;
+}
