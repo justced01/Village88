@@ -1,0 +1,43 @@
+body {
+    background-color: #F8F9FA;
+}
+
+.container-sm{
+    border: 1px solid red;
+}
+
+.font {
+    font-family: 'Exo 2', sans-serif;
+}
+
+.heading {
+    font-size: 48px;
+    color: #02244F;
+}
+
+.subheading {
+    font-size: 24px;
+}
+
+.set-width {
+    width: 700px;
+}
+
+.col, .bg-color {
+    background-color: #fff;
+}
+    .col p {
+        width: 300px;
+    }
+    .contact {
+        display: inline-block;
+        width: 600px;
+    }
+
+form {
+    width: 500px;
+}
+    form label, form textarea, form button{
+        margin: 10px 0;
+    }
+/* 50mins */

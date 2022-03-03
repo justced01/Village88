@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <title>Kanban Board</title>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <main>
+        <h1>Kanban Board</h1>
+        <section class="to-do">
+            <h2>To-Do</h2>
+            <ul id="sortableList1" class="connected-list">
+                <li class="ui-widget-content card"><p>Watch Netflix</p><img src="./icon.png" alt="profile icon"></li>
+                <li class="ui-widget-content card"><p>Watch Netflix</p><img src="./icon.png" alt="profile icon"></li>
+                <li class="ui-widget-content card"><p>Watch Netflix</p><img src="./icon.png" alt="profile icon"></li>
+                <li class="ui-widget-content card"><p>Watch Netflix</p><img src="./icon.png" alt="profile icon"></li>
+                <li class="ui-widget-content card"><p>Watch Netflix</p><img src="./icon.png" alt="profile icon"></li>
+            </ul>
+        </section>
+        <section class="in-progress">
+            <h2>In-Progress</h2>
+            <ul id="sortableList2" class="connected-list">
+                <li class="ui-widget-content card"><p>Watch Netflix</p><img src="./icon.png" alt="profile icon"></li>
+            </ul>
+        </section>
+        <section class="for-approval">
+            <h2>For-Approval</h2>
+            <ul id="sortableList3" class="connected-list">
+                <li class="ui-widget-content card"><p>Watch Netflix</p><img src="./icon.png" alt="profile icon"></li>
+            </ul>
+        </section>
+        <section class="testing">
+            <h2>Testing</h2>
+            <ul id="sortableList4" class="connected-list">
+                <li class="ui-widget-content card"><p>Watch Netflix</p><img src="./icon.png" alt="profile icon"></li>
+            </ul>
+        </section>
+        <section class="done">
+            <h2>Done</h2>
+            <ul id="sortableList5" class="connected-list">
+                <li class="ui-widget-content card"><p>Watch Netflix</p><img src="./icon.png" alt="profile icon"></li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>

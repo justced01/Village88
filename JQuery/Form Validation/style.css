@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+main {
+    width: 50%;
+    margin: 20px auto;
+    padding: 20px;
+}
+    main h1 {
+        text-align: center;
+    }
+
+    form input {
+        margin: 10px 0;
+    }
+        .submit-btn {
+            padding: 10px;
+            color: #fff;
+            background-color: blue;
+            box-shadow: 2px 2px #000;;
+        }

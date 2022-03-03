@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+body {
+    background-color: wheat;
+}
+
+main {
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px 0;
+    text-align: center;
+    font-family: 'Architects Daughter', cursive;
+    background-color: #E6EDEF;    
+    border-radius: 20px;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.323);
+}
+    main h1 {   
+        margin: 10px 0;
+        font-size: 45px;
+    }
+    section {
+        display: inline-block;
+        height: 800px;
+        width: 19%;
+        vertical-align: top;
+        background-color: #77828E;
+        border: 2px solid #173145;
+        border-radius: 10px;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    }   
+        section h2 {
+            padding: 20px 0;
+            font-size: 30px;
+            text-transform: uppercase;
+            color: #E6EDEF;
+            border-bottom: 3px solid #E6EDEF;
+        }
+        section ul {
+            position: relative;
+            list-style: none;
+        }
+            .card {
+                height: 80px;
+                margin: 10px 20px;
+                padding: 10px 0;
+                font-size: 20px;
+                border-radius: 10px;
+                cursor: pointer;
+            }
+                .card img {
+                    position: relative;
+                    top: 17px;
+                    left: 90px;
+                    width: 50px;
+                }

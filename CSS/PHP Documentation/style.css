@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+}
+
+.page {
+    height: 100%;
+    background-color: #2D2D2D;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+header {
+    background-color: #8892BF;
+}
+
+nav {
+    margin: 0 0 0 240px;
+    padding: 10px 0;
+    display: inline-block;
+}
+    nav a {
+        padding: 12px;
+        font-weight: 400;
+        text-decoration: none;
+        vertical-align: middle;
+        color: #ccc;
+    }
+        nav a:hover {
+            color: #fff;
+        }
+        nav a img {
+            width: 50px;
+        }
+
+.search-bar {
+    display: inline-block;
+    margin: 0 0 0 515px;
+}
+    .search-bar input {
+        width: 340px;
+        height: 24px;
+    }
+
+main, footer {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.inline {
+    padding: 15px 0;
+}
+    .breadcrumbs, .pagination {
+        display: inline-block;
+    }
+    .breadcrumbs {
+        width: 1100px;
+        padding-left: 20px;
+    }
+        .breadcrumbs a {
+            font-size: 15px;
+            text-decoration: none;
+            color: #ccc;
+        }
+    .pagination {
+        padding: 0 5px;
+    }
+        .pagination a {
+            padding: 0 15px;
+            font-size: 15px;
+            text-decoration: none;
+            color: #ccc;
+        }
+            .breadcrumbs a:hover, .pagination a:hover {
+                color: #793862;
+            }
+
+.inline-block {
+    display: inline-block;
+}
+.content {
+    height: 700px;
+    width: 1100px;
+    padding: 20px;
+    background-color: #F2F2F2;
+}
+    .container {
+        text-align: right;
+        margin-bottom: 15px;
+    }
+        .container select {
+            width: 180px;
+        }
+        .container a {
+            padding: 0 10px;
+            font-size: 15px;
+            text-decoration: none;
+            color: #369;
+        }
+    .content h1 {
+        margin-bottom: 10px;
+        font-size: 28px;
+        font-weight: 500;
+    }
+    .content h2 {
+        margin-bottom: 10px;
+        font-size: 24px;
+        font-weight: 500;
+    }
+    .content h3 {
+        margin-right: 350px;
+        font-size: 20px;
+        font-weight: 500;
+        color: #793862;
+    }
+    .content hr {
+        border-top: 1px dotted;
+        margin-bottom: 30px;
+    }
+    .content ul {
+        padding: 0 0 0 20px;
+        margin: 0 0 20px 0;
+    }
+        .content ul li {
+            margin: 5px 0;
+        }
+            .content ul li a {
+                color: #369;
+            }
+    .content p {
+        margin-bottom: 24px;
+    }
+    .content a {
+        color: #369;
+    }
+        .content a:hover {
+            color: #793862;
+        }
+    .content h3, .content a {
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+    .content .add-note {
+        text-decoration: underline;
+        margin-left: 350px;
+        color: #369;
+    }
+        .content a img {
+            width: 15px;
+            vertical-align: top;
+        }
+
+aside {
+    width: 330px;
+    padding: 20px;
+    vertical-align: top;
+    color: #ccc;
+}
+    aside h3 {
+        font-weight: 300;
+        padding: 10px 0;
+    }
+    aside p {
+        padding: 5px 10px;
+        font-size: 15px;
+    }
+        .styled p, .styled hr {
+            font-weight: bold;
+            color: #AE508D;
+        }
+    aside hr {
+        width: 100%;
+        border: 1px dotted;
+    }
+
+footer {
+    margin-top: 40px;
+    padding: 20px;
+}
+    footer a{
+        padding: 15px;
+        font-size: 18px;
+        text-decoration: none;
+        color: #ccc;
+    }
+        footer a:hover {
+            color: #793862;
+        }
+        

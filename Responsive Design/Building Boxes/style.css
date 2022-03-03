@@ -1,0 +1,141 @@
+/*CSS reset settings here*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Mobile */
+@media only screen and (max-width: 480px) {
+    #wrapper{
+        width: 100%;
+        padding-bottom: 5px;
+        background-color: #FFD9B7;
+    }
+    #logo{
+        display: block;
+        min-height: 100px;
+        width: 100%;
+        background-color: #B97A57;
+    }
+    #navigation{
+        display: block;
+        min-height: 100px;
+        width: 100%;
+        background-color: #FF7F27;
+    }
+    #main_content{
+        min-height: 150px;
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 20px 5px;
+        background-color: #880015;
+    }
+    #about{
+        display: block;
+        min-height: 150px;
+        width: 85%;
+        margin: 0 auto;
+        background-color: #FFAEC9;
+    }
+    .sponsors{
+        display: block;
+        min-height: 65px;
+        width: 100%;
+        margin-bottom: 10px;
+        background-color: #FFFF88;
+    } 
+}
+
+/* Tablet */
+@media only screen and (min-width: 481px) {
+    #wrapper{
+        max-width: 940px;
+        background-color: #FFD9B7;
+    }
+    #logo{
+        display: inline-block;
+        min-height: 130px;
+        width: 260px;
+        margin: 0 20px 25px 0;
+        background-color: #B97A57;
+    }
+    #navigation{
+        display: inline-block;
+        min-height: 130px;
+        width: 655px;
+        margin: 0 0 25px 0;
+        background-color: #FF7F27;
+    }
+    #main_content{
+        min-height: 250px;
+        width: auto;
+        margin: 0 0 25px 0;
+        padding: 30px;
+        background-color: #880015;
+    }
+    #about{
+        display: inline-block;
+        min-height: 250px;
+        min-width: 100%;
+        margin: 0 auto;
+        background-color: #FFAEC9;
+    }
+    .sponsors{
+        display: inline-block;
+        min-height: 65px;
+        width: 48%;
+        background-color: #FFFF88;
+    } 
+}
+
+/* Desktop */
+@media only screen and (min-width: 1024px) {
+    #wrapper{
+        max-width: 940px;
+        padding: 20px;
+        background-color: #FFD9B7;
+        margin: 0px auto;
+    }
+    #logo{
+        display: inline-block;
+        min-height: 130px;
+        min-width: 260px;
+        margin: 0 20px 25px 0;
+        background-color: #B97A57;
+    }
+    #navigation{
+        display: inline-block;
+        min-height: 130px;
+        min-width: 655px;
+        margin: 0 0 25px 0;
+        background-color: #FF7F27;
+    }
+    #main_content{
+        min-height: 250px;
+        width: auto;
+        margin: 0 0 25px 0;
+        padding: 30px;
+        background-color: #880015;
+    }
+    #about{
+        display: inline-block;
+        min-height: 250px;
+        min-width: 650px;
+        margin: 0 25px 0 0;
+        background-color: #FFAEC9;
+    }
+    #advertisement{
+        display: inline-block;
+        min-height: 200px;
+        width: 155px;
+        margin: 0 0 0 20px;
+        vertical-align: top;
+        background-color: #C8BFE7;
+    }
+    .sponsors{
+        display: inline-block;
+        min-height: 65px;
+        width: 310px;
+        background-color: #FFFF88;
+    } 
+}

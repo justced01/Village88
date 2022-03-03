@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+main {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+    main h1 {
+        font-size: 40px;
+    }
+        main p span {
+            font-weight: bold;
+        }
+    main img {
+        width: 160px;
+        margin: 5px;
+    }

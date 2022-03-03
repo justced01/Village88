@@ -1,0 +1,40 @@
+<!DOCTYPE html>	<!-- Declared the document type -->
+<html>
+<head>
+	<title>jQuery</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="bug_fighter.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" type="text/javascript"></script>
+	<script src="index.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<h1><span id="user1_name">Chun Li</span> VS <span id="user2_name">Blanka</span></h1>
+		<section id="user1">
+			<img class="picked" src="img/chunli_move.gif" />
+			<nav>
+				<img name="Chun Li" src="img/chunli.png" data-animated-img="img/chunli_move.gif" class="chosen"/>
+				<img name="Guile" src="img/guile.png" data-animated-img="img/guile_move.gif"/>
+				<img name="Vega"src="img/vega.png" data-animated-img="img/vega_move.gif"/>
+				<img name="Fei Long" src="img/feilong.png" data-animated-img="img/feilong_move.gif"/>
+				<img name="Blanka" src="img/blanka.png" data-animated-img="img/blanka_move.gif"/>
+			</nav>
+			<h2>Player 1</h2>	
+		</section>
+		<section id="user2">
+			<img class="picked" src="img/blanka_move.gif" />
+			<nav>
+				<img name="Blanka" src="img/blanka.png" data-animated-img="img/blanka_move.gif" class="chosen" />
+				<img name="Fei Long" src="img/feilong.png" data-animated-img="img/feilong_move.gif"/>
+				<img name="Vega" src="img/vega.png" data-animated-img="img/vega_move.gif"/>
+				<img name="Guile" src="img/guile.png" data-animated-img="img/guile_move.gif"/>
+				<img name="Chun Li" src="img/chunli.png" data-animated-img="img/chunli_move.gif"/>
+			</nav>
+			<h2>Player 2</h2>
+		</section>
+		<button>START GAME</button>
+		<input type="hidden" id="user1_default" value="img/chunli_move.gif"/>
+		<input type="hidden" id="user2_default" value="img/blanka_move.gif"/>
+	</div> 
+</body>
+</html>

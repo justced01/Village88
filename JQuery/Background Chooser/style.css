@@ -1,0 +1,19 @@
+#main_box {
+    height: 800px;
+    background-color: lightgray;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+}
+    #main_box img {
+        display: block;
+        width: 200px;
+        height: 100px;
+        margin: 10px 0 15px 10px;
+        cursor: pointer;
+    }
+h1 {
+    text-align: center;
+    margin: 20px;
+    font-family: Verdana;
+}

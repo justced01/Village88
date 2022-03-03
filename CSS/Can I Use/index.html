@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <title>Can I Use</title>
+    <link rel="stylesheet/less" href="style.less">
+    <script src="less.js" type="text/javascript"></script>
+</head>
+<body>
+    <nav role="navigation">
+        <ul class="primary-nav">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#news">News</a></li>
+        </ul>
+        <ul class="secondary-nav">
+            <li><a href="#comparebrowser">Compare browsers</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </nav>
+    <section class="search-wrapper">
+        <form>
+            <label>Can I use </label>
+            <input type="text" name="search">
+            <label>?</label>
+        </form>
+    </section>
+    <section class="details-wrapper">
+        <aside>
+            #
+        </aside>
+        <div class="about">
+            <h1>ECMAScript 2015 (ES6)</h1>
+            <p>
+                Support for the ECMAScript 2015 specification. Features include Promises, Modules, Classes, 
+                Template Literals, Arrow Functions, Let and Const, Default Parameters, Generators, 
+                Destructuring Assignment, Rest & Spread, Map/Set & WeakMap/WeakSet and many more.
+            </p>
+        </div>
+
+        <div class="table">
+            <h4>IE</h4>
+            <h4>Edge</h4>
+            <h4>Firefox</h4>
+            <h4>Chrome</h4>
+            <h4>Safari</h4>
+            <h4>Opera</h4>
+            <h4>Safari on iOS</h4>
+            <h4>Opera Mini</h4>
+            <h4>Android Browser</h4>
+            <h4>Opera Mobile</h4>
+            <h4>Chrome for Android</h4>
+            <div class="row">
+                <div></div>
+                <div class="partial"><span class="super">2</span>12-14</div>
+                <div class="not">2-5</div>
+                <div class="not">4-20</div>
+                <div class="not">3.1-7</div>
+                <div class="not">10-12.1</div>
+                <div class="not">3.2-6.1</div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="row">
+                <div></div>
+                <div class="supported">
+                    <span class="super">2</span>
+                    <span class="sec-super">3</span>
+                    15-18
+                </div>
+                <div class="partial">6-53</div>
+                <div class="partial">21-50</div>
+                <div class="partial">7.1-9.1</div>
+                <div class="partial">15-37</div>
+                <div class="partial">7-9.3</div>
+                <div></div>
+                <div class="not">2.1-4.3</div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="row">
+                <div class="not">6-10</div>
+                <div class="supported"><span class="super">2</span>79-96</div>
+                <div class="supported"><span class="super">2</span>54-95</div>
+                <div class="supported"><span class="super">2</span>51-96</div>
+                <div class="supported">10-15.1</div>
+                <div class="supported"><span class="super">2</span>38-81</div>
+                <div class="supported">10-15.1</div>
+                <div></div>
+                <div class="partial">4.4-4.4.4</div>
+                <div class="not">12-12.1</div>
+                <div></div>
+            </div>
+            <div class="row">
+                <div class=" partial">
+                    <span class="super">1</span>
+                    <span class="sec-super">2</span>
+                    11
+                </div>
+                <div class=" supported"><span class="super">2</span>97</div>
+                <div class=" supported"><span class="super">2</span>96</div>
+                <div class=" supported"><span class="super">2</span>97</div>
+                <div class=" supported">15.2</div>
+                <div class=" supported"><span class="super">2</span>82</div>
+                <div class=" supported">15.2</div>
+                <div class=" not">all</div>
+                <div class=" supported"><span class="super">2</span>96</div>
+                <div class=" supported"><span class="super">2</span>64</div>
+                <div class=" supported"><span class="super">2</span>96</div>
+            </div>
+            <div class="row">
+                <div></div>
+                <div></div>
+                <div class="supported"><span class="super">2</span>97-98</div>
+                <div class="supported"><span class="super">2</span>98-100</div>
+                <div class="supported">TP</div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+
+        <div class="notes">
+            <p>As ES6 refers to a huge specification and browsers have various levels of support,"Supported" means at least 95% of the spec is supported. "Partial support" refers to at least 10% of the spec being supported. For full details see the <a href="#">Kangax ES6 support table.</a></p>
+            <p><span class="num">1</span>Notable partial support in IE11 includes (at least some) support for <code>const</code>, <code>let</code>, block-level function declaration, typed arrays, <code>Map</code>, <code>Set</code>, and <code>WeakMap</code>.</p>
+            <p><span class="num">2</span>
+                Does not support <a href="#">tail call optimization</a></p>
+            <p>
+                <span class="num">3</span>
+                Only has partial Symbol support and partial support for <code>RegExp.prototype</code> properties
+            </p>
+        </div>
+    </section>
+</body>
+</html>

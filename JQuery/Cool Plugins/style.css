@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+nav {
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    zoom: 1;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+    nav img, nav ul {
+        display: inline-block;
+        vertical-align: top;
+    }
+    nav img {
+        height: 100%;
+    }
+    ul, li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+        nav li {
+            display: inline-block;
+            margin: 0 5px;
+            vertical-align: top;
+            zoom: 1;
+        }
+        nav a {
+            display: block;
+            padding: 0 20px;
+            line-height: 60px;
+            font-weight: 600;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: #243E1F;
+            -webkit-transition: 0.2s;
+                    transition: 0.2s;
+        }
+            nav .active a{
+                background: #243E1F;
+                color: #fff;
+            }
+    .home {
+        height: 1000px;
+        padding: 50px;
+        text-align: center;
+        background-image: url('./img/milktea.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+        .home article {
+            width: 30%;
+            margin: 250px auto 0 auto;
+            padding: 20px;
+            font-size: 20px;
+            background-color: rgba(245, 222, 179, 0.679);
+            color: #243E1F;
+            border-radius: 10px;
+        }
+            .home article img {
+                width: 300px;
+                border-radius: 20px;
+            }
+    .contact {
+        height: 1000px;
+        padding: 50px;
+        background-image: url('./img/contact.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 1200px;
+    }
+        .contact form {
+            width: 30%;
+            margin: 250px auto 0 auto;
+            padding: 20px;
+            font-size: 20px;
+            background-color: #fff;
+            border-radius: 20px;
+        }
+    .order {
+        height: 1000px;
+        background: gold;
+    }
+
+    .scrollup {
+        width: 60px;
+        height: 60px;
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        text-align: center;
+        padding: 10px;
+        z-index: 100;
+        cursor: pointer;
+    }
