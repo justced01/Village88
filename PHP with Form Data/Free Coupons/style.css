@@ -1,0 +1,39 @@
+.wrapper {
+    width: 20%;
+    margin: 0 auto;
+    font-family: sans-serif;
+    text-align: center;
+}
+    p {
+        margin: 5px 0;
+        font-size: 23px;
+    }
+    span {
+        font-weight: bold;
+    }
+    form {
+        margin-top: 40px;
+    }
+    .container {
+        padding: 10px 0;
+        border: 4px dashed #000;
+        border-radius: 15px;
+        background-color: rgb(255, 225, 103);
+    }
+        .resetBtn {
+            padding: 10px;
+        }
+
+/* .container input {
+margin: 0 35px;
+padding: 5px;
+text-decoration: none;
+box-shadow: 2px 2px #000;
+color: #fff;
+}
+.reset {
+background-color: red;
+}
+.claim {
+background-color: green;
+} */

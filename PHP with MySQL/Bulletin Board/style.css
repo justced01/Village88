@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.wrapper {
+    width: 25%;
+    margin: 100px auto;
+}
+    form {
+        margin: 50px 0 0 0;
+    }
+    .input, .button {
+        display: block;
+    }
+        form label, form input {
+            display: inline-block;
+        }
+        form label {
+            width: 20%;
+            vertical-align: top;
+        }
+        form input {
+            width: 75%;
+            height: 30px;
+            margin-bottom: 20px;
+        }
+        form textarea {
+            width: 75%;
+            height: 80px;
+        }
+    .button {
+        margin: 20px 15px 0 0;
+        text-align: right;
+    }
+        .button input {
+            width: 50px;
+            padding: 5px;
+            box-shadow: 2px 2px 0 #000;
+            cursor: pointer;
+        }
+    .alert-message {
+        margin-top: 10px;
+        color: rgb(255, 81, 81);
+    }
+
+/* Main Page */
+header, main {
+    width: 40%;
+    margin: 40px auto;
+}
+header h2 {
+    margin-bottom: 10px;
+    font-size: 40px;
+    text-align: center;
+}
+header a {
+    padding: 5px;
+    text-decoration: none;
+    border: 1px solid #000;
+    box-shadow: 2px 2px 0 #000;
+    color: #000;
+}
+    article {
+        margin: 30px 0;
+        border-bottom: 4px solid #000;
+    }
+        article p {
+            margin: 10px 0 20px 0;
+        }

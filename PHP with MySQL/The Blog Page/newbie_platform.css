@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #7d8898;
+}
+
+.header-top {
+    padding: 5px 80px;
+    font-family: Helvetica;
+    border-bottom: 1px solid lightgrey;
+    background-color: #fff;
+}
+    .header-top h2 {
+        color: #873188;
+    }
+        .header-top h2 span {
+            font-weight: 300;
+            color: #000;
+        }
+
+main {
+    width: 30%;
+    margin: 80px auto;
+    padding: 50px;
+    font-family: arial;
+    border-radius: 20px;
+    background-color: #f2f2f6;
+}
+    .header-main {
+        margin-bottom: 40px;
+    }
+        .header-main h2 {
+            margin-bottom: 10px;
+            font-size: 25px;
+            font-family: Helvetica;
+        }
+        .header-main p {
+            font-size: 14px;
+        }
+        .error {
+            margin-top: 5px;
+            color: red;
+        }
+        .success {
+            color: green;
+        }
+    .register-form {
+        font-family: Helvetica;
+    }
+        .input-fields {
+            margin: 20px 0;
+        }
+            .input-fields label {
+                display: block;
+                margin-bottom: 10px;
+                font-size: 15px;
+                font-weight: 600;
+            }
+
+            .input-fields input {
+                width: 100%;
+                padding: 5px;
+                border: none;
+                border-radius: 5px;
+                box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+            }
+        .form-actions {
+            text-align: right;
+        }
+            .register-btn, .login-btn {
+                border: 1px solid rgb(136, 136, 136);
+                border-radius: 6px;
+                background-color: #873188;
+                color: #fff;
+                cursor: pointer;
+            }
+            .register-btn {
+                padding: 5px;
+            }
+            .login-btn {
+                padding: 7px 10px;
+            }
+
+            .link {
+                margin: 15px 0;
+                text-align: right;
+            }
+                .link a{
+                    font-size: 14px;
+                    font-weight: 700;
+                    text-decoration: none;
+                    color: #873188;
+                }
+            .form-actions p {
+                margin: 10px 0;
+                font-size: 14px;
+                font-weight: 300;
+                text-align: center;
+            }
+                .form-actions p a {
+                    text-decoration: none;
+                    color: #873188;
+                }
+/* Main Page */
+.header-top-main {
+    position: relative;
+    padding: 5px 60px;
+    font-family: arial;
+    border-bottom: 1px solid rgb(163, 163, 163);
+    box-shadow: 0px 2px 5px rgb(56, 56, 56);
+    background-color:#D4CEAC;
+    color: #3F1D0B;
+    z-index: 1;
+}
+    .h-title {
+        width: 65%;
+    }
+    .h-title, .user-nav, .user-nav * {
+        display: inline-block;
+    }
+        .user-nav a {
+            text-decoration: none;
+            color: #844204;
+        }

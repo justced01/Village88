@@ -1,0 +1,33 @@
+=================================================================================================
+#1
+Problem:
+Fatal error: Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in C:\xampp\htdocs\Village88\PHP with MySQL\connect.php:7 Stack trace: #0 C:\xampp\htdocs\Village88\PHP with MySQL\connect.php(7): mysqli->__construct('localhost', 'root', '', '') #1 {main} thrown in C:\xampp\htdocs\Village88\PHP with MySQL\connect.php on line 7
+
+Solution:
+* Whereas the MySQL Workbench and XAMPP have conflict between accessing host and root, already uninstalled MySQL Workbench.
+
+===================================================================================================
+#2
+Problem:
+Fatal error: Uncaught mysqli_sql_exception: Unknown database '1231' in C:\xampp\htdocs\Village88\PHP with MySQL\connect.php:10 Stack trace: #0 C:\xampp\htdocs\Village88\PHP with MySQL\connect.php(10): mysqli->__construct('localhost', 'root', 'password', '1231') #1 {main} thrown in C:\xampp\htdocs\Village88\PHP with MySQL\connect.php on line 10
+
+Solution:
+Database name is not created that's why it has error, to fix it need to create a database named "1231".
+
+===================================================================================================
+#3
+Authorization Problem:
+Fatal error: Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in C:\xampp\htdocs\Village88\PHP with MySQL\connect.php:10 Stack trace: #0 C:\xampp\htdocs\Village88\PHP with MySQL\connect.php(10): mysqli->__construct('localhost', 'root', '', '1231') #1 {main} thrown in C:\xampp\htdocs\Village88\PHP with MySQL\connect.php on line 10
+
+Solution:
+Password is set in user "root" at localhost, connecting to host without a password input can cause error. To fix this, need to provide a password and keep the password in mind. Same as with wrong password input.
+===================================================================================================
+#4
+Network Problem:
+Warning: mysqli::__construct(): php_network_getaddresses: getaddrinfo for localhost1 failed: No such host is known. in C:\xampp\htdocs\Village88\PHP with MySQL\connect.php on line 10
+
+Fatal error: Uncaught mysqli_sql_exception: php_network_getaddresses: getaddrinfo for localhost1 failed: No such host is known. in C:\xampp\htdocs\Village88\PHP with MySQL\connect.php:10 Stack trace: #0 C:\xampp\htdocs\Village88\PHP with MySQL\connect.php(10): mysqli->__construct('localhost1', 'root', 'password', '1231') #1 {main} thrown in C:\xampp\htdocs\Village88\PHP with MySQL\connect.php on line 10
+
+Solution:
+"localhost1", no such host is known. Meaning in MySQL there's no "localhost1" user created. To fix this, make sure to know the user details in PHPMyAdmin.
+===================================================================================================
