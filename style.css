@@ -1,0 +1,31 @@
+
+/* PRODUCT PAGE */
+.product-main-header a {
+    vertical-align: bottom;
+    text-decoration: none;
+    padding: 3px 10px;
+    font-size: 1.1rem;
+    color: #000;
+}
+.product-main-header a:not(:last-child) {
+    border-right: 1px solid silver;
+}
+           
+.product-pagination {
+margin: 20px 0;
+text-align: center;
+}
+.product-pagination a {
+padding: 0 10px;
+text-decoration: none;
+color: #000;
+}
+.product-pagination a:not(:last-child){
+border-right: 1px solid silver;
+}
+.product-pagination a:hover {
+text-decoration: underline;
+text-decoration-style: solid;
+text-decoration-color: silver;
+text-decoration-thickness: 2px;
+}
