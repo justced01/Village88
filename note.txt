@@ -1,0 +1,1 @@
+upon login if you are a customer you're redirect to catalog page while admin redirect to dashboard page.
