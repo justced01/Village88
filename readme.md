@@ -1,5 +1,5 @@
-Village88-ECommerce PHP Capstone
-Owned by: John Cedrick Dela Carcel
+Village88-ECommerce PHP Capstone  
+Owned by: John Cedrick Dela Carcel  
 Tools used: Tailwind CSS, JQuery, JQuery UI, PHP, Codeigniter
 
 
