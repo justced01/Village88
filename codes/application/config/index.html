@@ -1,11 +1,80 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>403 Forbidden</title>
-</head>
-<body>
+    <head>
+        <meta charset="utf-8">
+        <title>pokemon</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <style>
+          button{
+               object-fit: cover;
+            }
 
-<p>Directory access is forbidden.</p>
 
-</body>
+
+        </style>
+        <script>
+            $(document).ready(function()
+            {
+                //$(document).on("click", "img", function()
+                //{
+
+                    $.get("https://api.pokemontcg.io/v2/cards?q=id:ex11", function(res)
+                    { 
+                        //$(document).on("click", "img", function()
+                        //{
+                        var html_str = "<h4>Types</h4>";  
+                        
+                        var j = 1;
+                        //var string3 = res.data[15].id;
+                        //var string1 = "ex11-" + j;
+                         //string3 = ex11-1 ; string1 = ex11-15
+                        var k = 0;
+                        
+                        for( i=0; i< 100; i++)
+                        {
+                            //string1 = "ex11-" + j;
+                            //string3 = res.data[i].id;
+
+                            //if(string3 === string1)
+                            //{
+                                            
+                            html_str += "<button id ='" + res.data[i].id + "'><img src ='" + res.data[i].images['small'] + "'></button>";
+                            //html_str += "<a href='https://api.pokemontcg.io/v2/cards?q=id:" + res.data[i].id + "'><img src=" + res.data[i].images.small + "></a>";   
+                            
+                            j++;
+
+                                k = i;
+                            //}
+                        
+                        
+                        }
+                        //string = res.data[i].id;
+                      
+
+                       
+                            html_str +=  k;
+                        $("#poke").html(html_str);
+                        //
+                        //});
+                    }, "json"); 
+
+                    //for (var l = 1; l<=5; l++)
+                        //{
+                               
+                            //}
+
+               //$("img").click(function()
+               //{
+                //alert("The paragraph was clicked.");
+               //});
+                
+            });
+
+           
+        </script>
+    </head>
+    <body>
+        <div id="poke">
+        </div>
+    </body>
 </html>

@@ -1,20 +1,47 @@
-* {
-    margin: 0;
-    padding: 0;
-    outline: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
+
+/* PRODUCT PAGE */
+.product-main-header a {
+    vertical-align: bottom;
+    text-decoration: none;
+    padding: 3px 10px;
+    font-size: 1.1rem;
+    color: #000;
+}
+.product-main-header a:not(:last-child) {
+    border-right: 1px solid silver;
+}
+           
+.product-pagination {
+margin: 20px 0;
+text-align: center;
+}
+.product-pagination a {
+padding: 0 10px;
+text-decoration: none;
+color: #000;
+}
+.product-pagination a:not(:last-child){
+border-right: 1px solid silver;
+}
+.product-pagination a:hover {
+text-decoration: underline;
+text-decoration-style: solid;
+text-decoration-color: silver;
+text-decoration-thickness: 2px;
 }
 
-label {
-    display: inline-block;
-    width: 100px;
+.email-input {
+    background: url('https://img.icons8.com/external-kiranshastry-solid-kiranshastry/64/000000/external-email-interface-kiranshastry-solid-kiranshastry-1.png') no-repeat left;
+    background-size: 25px;
+    background-position: 10px;
 }
-
-.success {
-    color: lime;
+.password-input {
+    background: url('https://img.icons8.com/ios-glyphs/30/000000/password--v2.png') no-repeat left;
+    background-size: 22px;
+    background-position: 10px;
 }
-
-.fail {
-    color: red;
+.name-input {
+    background: url('https://img.icons8.com/material-rounded/50/000000/name.png') no-repeat left;
+    background-size: 22px;
+    background-position: 10px;
 }
