@@ -24,4 +24,9 @@ $(document).ready(function(){
         });
         $("ul, li").disableSelection();
     });
+
+    $("a.category").click(function(){
+        $('input.displayCategory').val($(this).children().text());
+        $('label.displayCategory').text($(this).text());
+    });
 })

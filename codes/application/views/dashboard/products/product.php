@@ -25,72 +25,19 @@
                 <th class="px-4 py-2 bg-[#f8f8f8]">Quantity Sold</th>
                 <th class="px-4 py-2 bg-[#f8f8f8]">Action</th>
             </tr>
+<?php foreach($products as $product){ ?>
             <tr class="hover:bg-gray-100 border-b border-gray-200 py-10">
-                <td class="px-4 py-2 w-1/12"><img src="/sample.jpg" alt="" class=""></td>
-                <td class="px-4 py-2">1</td>
-                <td class="px-4 py-2">Tshirt</td>
-                <td class="px-4 py-2">211</td>
-                <td class="px-4 py-2">31</td>
+                <td class="px-4 py-2 w-1/12"><img src="<?= $product['filepath']; ?>" alt="Main image of product" class="rounded"></td>
+                <td class="px-4 py-2"><?= $product['id']; ?></td>
+                <td class="px-4 py-2 w-2/5"><?= $product['name']; ?></td>
+                <td class="px-4 py-2"><?= $product['inventory_stock']; ?></td>
+                <td class="px-4 py-2"><?= $product['stock_sold']; ?></td>
                 <td class="px-4 py-2">
-                    <a href="#editProduct" rel="modal:open" class="edit-product p-2 border rounded border-slate-500 hover:bg-slate-200">edit</a>
+                    <a href="<?= base_url(); ?>products/show/<?= $product['id']; ?>" rel="modal:open" class="edit-product p-2 border rounded border-slate-500 hover:bg-slate-200">edit</a>
                     <a href="" class="p-2 text-red-500 border rounded border-red-500  hover:bg-red-100">delete</a>
                 </td>
             </tr>
-            <tr class="hover:bg-gray-100 border-b border-gray-200 py-10">
-                <td class="px-4 py-2 w-1/12"><img src="/sample.jpg" alt="" class=""></td>
-                <td class="px-4 py-2">1</td>
-                <td class="px-4 py-2">Tshirt</td>
-                <td class="px-4 py-2">211</td>
-                <td class="px-4 py-2">31</td>
-                <td class="px-4 py-2">
-                    <a href="editproduct.html" rel="modal:open" class="edit-product p-2 border rounded border-slate-500 hover:bg-slate-200">edit</a>
-                    <a href="" class="p-2 text-red-500 border rounded border-red-500 hover:bg-red-100">delete</a>
-                </td>
-            </tr>
-            <tr class="hover:bg-gray-100 border-b border-gray-200 py-10">
-                <td class="px-4 py-2 w-1/12"><img src="/sample.jpg" alt="" class=""></td>
-                <td class="px-4 py-2">1</td>
-                <td class="px-4 py-2">Tshirt</td>
-                <td class="px-4 py-2">211</td>
-                <td class="px-4 py-2">31</td>
-                <td class="px-4 py-2">
-                    <a href="editproduct.html" rel="modal:open" class="edit-product p-2 border rounded border-slate-500 hover:bg-slate-200">edit</a>
-                    <a href="" class="p-2 text-red-500 border rounded border-red-500 hover:bg-red-100">delete</a>
-                </td>
-            </tr>
-            <tr class="hover:bg-gray-100 border-b border-gray-200 py-10">
-                <td class="px-4 py-2 w-1/12"><img src="/sample.jpg" alt="" class=""></td>
-                <td class="px-4 py-2">1</td>
-                <td class="px-4 py-2">Tshirt</td>
-                <td class="px-4 py-2">211</td>
-                <td class="px-4 py-2">31</td>
-                <td class="px-4 py-2">
-                    <a href="editproduct.html" rel="modal:open" class="edit-product p-2 border rounded border-slate-500 hover:bg-slate-200">edit</a>
-                    <a href="" class="p-2 text-red-500 border rounded border-red-500 hover:bg-red-100">delete</a>
-                </td>
-            </tr>
-            <tr class="hover:bg-gray-100 border-b border-gray-200 py-10">
-                <td class="px-4 py-2 w-1/12"><img src="/sample.jpg" alt="" class=""></td>
-                <td class="px-4 py-2">1</td>
-                <td class="px-4 py-2">Tshirt</td>
-                <td class="px-4 py-2">211</td>
-                <td class="px-4 py-2">31</td>
-                <td class="px-4 py-2">
-                    <a href="editproduct.html" rel="modal:open" class="edit-product p-2 border rounded border-slate-500 hover:bg-slate-200">edit</a>
-                    <a href="" class="p-2 text-red-500 border rounded border-red-500 hover:bg-red-100">delete</a>
-                </td>
-            </tr>
-            <tr class="hover:bg-gray-100 border-b border-gray-200 py-10">
-                <td class="px-4 py-2 w-1/12"><img src="/sample.jpg" alt="" class=""></td>
-                <td class="px-4 py-2">1</td>
-                <td class="px-4 py-2">Tshirt</td>
-                <td class="px-4 py-2">211</td>
-                <td class="px-4 py-2">31</td>
-                <td class="px-4 py-2">
-                    <a href="editproduct.html" rel="modal:open" class="edit-product p-2 border rounded border-slate-500 hover:bg-slate-200">edit</a>
-                    <a href="" class="p-2 text-red-500 border rounded border-red-500 hover:bg-red-100">delete</a>
-                </td>
-            </tr>
+<?php } ?>
         </table>
         <footer class="product-pagination">
             <a href="">1</a>
@@ -105,7 +52,6 @@
             <a href="">10</a>
             <a href="">-></a>
         </footer>
-        <div id="editProduct" class="modal"><?php $this->load->view('dashboard/products/editproduct'); ?></div>
     </div>
 </body>
 </html>

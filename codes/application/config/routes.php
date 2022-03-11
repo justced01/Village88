@@ -62,4 +62,6 @@ $route['logout'] = 'users/logout';
 
 // products
 $route['products/new'] = 'products/add_product';
-$route['products/update'] = 'products/edit_product';
+$route['products/show/(:any)'] = 'products/edit_product/$1';
+$route['products/update/(:any)'] = 'products/process_edit_product/$1';
+

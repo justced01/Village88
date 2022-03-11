@@ -1,30 +1,30 @@
 
     <div id="addProduct" class="container w-full my-4 p-2">
-        <h2 class="my-2 text-2xl font-semibold text-center text-gray-900 uppercase">Add Product</h2>
+        <h2 class="my-2 text-2xl font-semibold text-center text-gray-900 uppercase">Add a new Product</h2>
         <div id="errors" class="text-red-500"></div>
         <form action="products/new" method="post" enctype="multipart/form-data" id="addProductForm">
             <input type="hidden" name="<?= $this->security->get_csrf_token_name(); ?>" value="<?= $this->security->get_csrf_hash(); ?>" id="csrf_token">
             <div class="mb-4">
-                <label for="" class="block text-gray-700 text-sm font-bold mb-2">Name: </label>
-                <input type="text" name="name" value="<?= set_value('name') ?>" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Name: </label>
+                <input type="text" name="name" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
             </div>
             <div class="mb-4">
-                <label for="" class="block text-gray-700 text-sm font-bold mb-2">Description: </label>
-                <textarea name="description" value="<?= set_value('name') ?>" id="" cols="10" rows="5" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"></textarea>
+                <label for="description" class="block text-gray-700 text-sm font-bold mb-2">Description: </label>
+                <textarea name="description" id="" cols="10" rows="5" class="shadow appearance-none border rounded w-full py-2 px-3 text-sm text-gray-700 leading-tight focus:outline-none focus:shadow-outline"></textarea>
             </div>
             <div class="mb-4 flex">
                 <div>
-                    <label for="" class="text-gray-700 text-sm font-bold mb-2">Product Price: </label>
-                    <input type="number" name="price" value="<?= set_value('name') ?>" maxlength="6" class="shadow appearance-none border rounded w-1/3 py-2 px-2 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                    <label for="price" class="text-gray-700 text-sm font-bold mb-2">Product Price: </label>
+                    <input type="number" name="price" min="0" maxlength="6" class="shadow appearance-none border rounded w-1/3 py-2 px-2 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
                 </div>
                 <div>
-                    <label for="" class="text-gray-700 text-sm font-bold mb-2">Inventory Stock: </label>
-                    <input type="number" name="inventory_stock" value="<?= set_value('name') ?>" maxlength="6" class="shadow appearance-none border rounded w-1/3 py-2 px-2 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                    <label for="stock" class="text-gray-700 text-sm font-bold mb-2">Inventory Stock: </label>
+                    <input type="number" name="inventory_stock" min="0" maxlength="6" class="shadow appearance-none border rounded w-1/3 py-2 px-2 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
                 </div>
             </div>
             <div class="mb-4">
-                <label for="" class="block text-gray-700 text-sm font-bold mb-2">Categories: </label>
-                <select name="category" id="" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                <label for="category" class="block text-gray-700 text-sm font-bold mb-2">Categories: </label>
+                <select name="category" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
                         <option value=""></option>
 <?php foreach($categories as $category){ ?>
                         <option value="<?= $category['id']; ?>"><?= $category['category']; ?></option>
@@ -32,7 +32,7 @@
                 </select>
             </div>
             <div class="mb-4">
-                <label for="" class="block text-gray-700 text-sm font-bold mb-2">or add new category</label>
+                <label for="new_category" class="block text-gray-700 text-sm font-bold mb-2">or add new category</label>
                 <input type="text" name="new_category"class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
             </div>
             <div class="mb-4">
