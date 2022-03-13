@@ -21,9 +21,9 @@
 <body>
 	<header class="w-full px-14 py-2 tablet:px-8 mobile:px-4 flex justify-between border-b border-gray-300 drop-shadow-md bg-[#F5F5F5]">
 		<nav class="">
-			<h1><a href="<?= base_url(); ?>products" class="text-xl px-5 tablet:text-lg mobile:text-base font-normal uppercase">Newbie Merch</a></h1>
+			<h1><a href="<?= base_url(); ?><?= $header['logged_in'] === true ? 'products' : 'login' ?>" class="text-xl px-5 tablet:text-lg mobile:text-base font-normal uppercase">Newbie Merch</a></h1>
 		</nav>
-<?php if(isset($header['logged_in'])){ ?>
+<?php if($header['logged_in'] === true){ ?>
 		<nav class="">
 			<a href="<?= base_url(); ?>carts" class="px-5 tablet:text-lg mobile:text-base font-normal">Shopping Cart (5)</a>
 			<a href="<?= base_url(); ?>logout" class="px-5 tablet:text-lg mobile:text-base font-normal">logout</a>

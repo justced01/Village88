@@ -5,7 +5,7 @@ $(document).ready(function(){
             window.location.href = base_url + "dashboard/products";
         }
         else {
-            $("#csrf_token").val(obj.token);
+            $("input#csrf_token").val(obj.token);
             $("#errors").html("<p class='text-md text-red-500'>" + obj.response + "</p>");
         }
     }); 
@@ -15,7 +15,7 @@ $(document).ready(function(){
         if(obj.response_code === 200){
             $("#edit_csrf_token").val(obj.token);
             $("#response").html("<p class='text-md text-green-900'>" + obj.response + "</p>");
-            window.location.href = base_url + "products";
+            window.location.href = base_url + "dashboard/products";
         }
         else {
             $("#edit_csrf_token").val(obj.token);

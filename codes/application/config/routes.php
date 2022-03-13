@@ -63,7 +63,7 @@ $route['logout'] = 'users/logout';
 // dashboard products
 $route['dashboard/new'] = 'dashboard/add_product';
 $route['dashboard/show/(:any)'] = 'dashboard/edit_product/$1';
-$route['dashboard/update/(:any)'] = 'productsdashboardprocess_edit_product/$1';
+$route['dashboard/update/(:any)'] = 'dashboard/process_edit_product/$1';
 $route['dashboard/remove/(:any)'] = 'dashboard/delete_product/$1';
 $route['dashboard/remove_category/(:any)'] = 'dashboard/delete_category/$1';
 $route['dashboard/remove_image/(:any)'] = 'dashboard/delete_image/$1';

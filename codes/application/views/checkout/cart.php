@@ -33,12 +33,12 @@
         </table>
         <div class="my-3 text-right">
             <p class="my-3 text-lg">Total: $19.99</p>
-            <a href="show_product.html" class="py-2 px-3 text-gray border rounded border-slate-500 hover:bg-slate-100">Continue Shopping</a>
+            <a href="<?= base_url(); ?>products" class="py-2 px-3 text-gray border rounded border-slate-500 hover:bg-slate-100">Continue Shopping</a>
         </div>
         <div class="mt-4 p-3 flex border rounded border-slate-200 shadow">
             <div class="basis-1/2">
                 <h2 class="mb-4 text-2xl font-semibold text-gray-700">Shipping Information</h2>
-                <form action="#" method="post" class="ml-4">
+                <form action="" method="" class="ml-4">
                     <div class="mb-4 flex">
                         <label for="" class="basis-2/12 mr-2 text-gray-700 text-sm font-bold mb-2">First name: </label>
                         <input type="text" class="shadow appearance-none border rounded w-2/4 py-1 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
@@ -71,7 +71,7 @@
             </div>
             <div class="basis-1/2">
                 <h2 class="my-2 text-2xl font-semibold text-gray-700">Billing Information</h2>
-                <form action="#" method="post" class="ml-4">
+                <form action="" method="" class="ml-4">
                     <div class="mb-4 flex items-center">
                         <input type="checkbox" class="shadow border rounded focus:outline-none focus:shadow-outline">
                         <label for="" class="ml-2 text-gray-700 text-sm font-semibold">Same as Shipping </label>

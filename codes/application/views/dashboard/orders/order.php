@@ -23,7 +23,7 @@
                 <th class="px-4 py-2 bg-[#f8f8f8]">Status</th>
             </tr>
             <tr class="hover:bg-gray-100 border-b border-gray-200 py-10">
-                <td class="px-4 py-3"><a href="order_history.html">1</a></td>
+                <td class="px-4 py-3"><a href="<?= base_url(); ?>orders/show">1</a></td>
                 <td class="px-4 py-3">White tshirt with white login</td>
                 <td class="px-4 py-3">12/12/2021</td>
                 <td class="px-4 py-3">31 3rd street sto nino marikina</td>

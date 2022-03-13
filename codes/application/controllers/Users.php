@@ -7,7 +7,11 @@ class Users extends CI_Controller {
 	 * Owned by; Cedrick Dela Carcel
 	 */
 	public function index(){
-		$this->load->view('components/header_main');
+		$data['header'] = array(
+			'title' => 'Index Page',
+			'logged_in' => false
+		);
+		$this->load->view('components/header_main', $data);
 		$this->load->view('index');
 	}
 	/**
@@ -16,7 +20,8 @@ class Users extends CI_Controller {
 	 */
 	public function login(){
 		$data['header'] = array(
-			'title' => 'Login'
+			'title' => 'Login', 
+			'logged_in' => false
 		);
 		$this->load->view('components/header_main', $data);
 		$this->load->view('users/login');
@@ -27,7 +32,8 @@ class Users extends CI_Controller {
 	 */
 	public function register(){
 		$data['header'] = array(
-			'title' => 'Register'
+			'title' => 'Register',
+			'logged_in' => false
 		);
 		$this->load->view('components/header_main', $data);
 		$this->load->view('users/register');

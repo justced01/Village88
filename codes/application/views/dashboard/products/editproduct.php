@@ -8,7 +8,7 @@
     <div class="container w-full my-4 p-2">
         <h2 class="my-2 text-2xl font-semibold text-center text-gray-900 uppercase">Edit Product - ID <?= $product['id']; ?></h2>
         <div id="response"></div>
-        <form action="dashboard/update/<?= $product['id'] ?>" method="post" enctype="multipart/form-data" id="editProductForm">
+        <form action="<?=base_url(); ?>dashboard/update/<?= $product['id'] ?>" method="post" enctype="multipart/form-data" id="editProductForm">
             <input type="hidden" name="<?= $this->security->get_csrf_token_name(); ?>" value="<?= $this->security->get_csrf_hash(); ?>" id="edit_csrf_token">
             <div class="mb-4">
                 <label class="block text-gray-700 text-sm font-bold mb-2">Name: </label>

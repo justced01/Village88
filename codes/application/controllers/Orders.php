@@ -14,4 +14,16 @@ class Orders extends CI_Controller {
         $this->load->view('components/header_admin', $data);
         $this->load->view('dashboard/orders/order');
     }
+    /**
+     * DOCU: This function is to render the order history page
+     * Owned by: Cedrick Dela Carcel
+     */
+    public function show(){
+        $data['header'] = array(
+            'title' => 'Dashboard Orders',
+            'logged_in' => TRUE
+        );
+        $this->load->view('components/header_admin', $data);
+        $this->load->view('dashboard/orders/show');
+    }
 }
