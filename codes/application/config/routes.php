@@ -60,8 +60,16 @@ $route['register'] = 'users/register';
 $route['users/register_validate'] = 'users/process_register';
 $route['logout'] = 'users/logout';
 
-// products
-$route['products/new'] = 'products/add_product';
-$route['products/show/(:any)'] = 'products/edit_product/$1';
-$route['products/update/(:any)'] = 'products/process_edit_product/$1';
+// dashboard products
+$route['dashboard/new'] = 'dashboard/add_product';
+$route['dashboard/show/(:any)'] = 'dashboard/edit_product/$1';
+$route['dashboard/update/(:any)'] = 'productsdashboardprocess_edit_product/$1';
+$route['dashboard/remove/(:any)'] = 'dashboard/delete_product/$1';
+$route['dashboard/remove_category/(:any)'] = 'dashboard/delete_category/$1';
+$route['dashboard/remove_image/(:any)'] = 'dashboard/delete_image/$1';
+
+// catalog products
+
+// order 
+$route['dashboard/orders'] = 'orders';
 

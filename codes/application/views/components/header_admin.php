@@ -21,9 +21,9 @@
 <body>
     <header class="w-full px-14 py-2 tablet:px-8 mobile:px-4 flex justify-between border-b border-gray-300 drop-shadow-md bg-[#F5F5F5]">
         <nav class="flex items-center ">
-            <h1><a href="/admindashboard/dashboard.html" class="text-xl px-5 tablet:text-lg mobile:text-base font-normal uppercase">Dashboard</a></h1>
-            <a href="orders" class="text-md px-1 tablet:text-lg mobile:text-base font-normal uppercase">Orders</a>
-            <a href="products" class="text-md px-1 tablet:text-lg mobile:text-base font-normal uppercase">Products</a>
+            <h1><a href="<?= base_url(); ?>dashboard/orders" class="text-xl px-5 tablet:text-lg mobile:text-base font-normal uppercase">Dashboard</a></h1>
+            <a href="<?= base_url(); ?>dashboard/orders" class="text-md px-1 tablet:text-lg mobile:text-base font-normal uppercase">Orders</a>
+            <a href="<?= base_url(); ?>dashboard/products" class="text-md px-1 tablet:text-lg mobile:text-base font-normal uppercase">Products</a>
         </nav>
 <?php if(isset($header['logged_in'])){ ?>
         <nav class="">

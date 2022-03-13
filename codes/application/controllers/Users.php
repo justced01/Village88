@@ -49,7 +49,7 @@ class Users extends CI_Controller {
 					'user_id' => $user_id,
 					'user_level' => $user_role
 				));
-				$user_role === 'admin' ? redirect('orders') : redirect('catalog');
+				$user_role === 'admin' ? redirect('orders') : redirect('products');
 			}
 			else {
 				$this->session->set_flashdata('errors', $match);

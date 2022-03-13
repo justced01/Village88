@@ -2,7 +2,7 @@
     <div id="addProduct" class="container w-full my-4 p-2">
         <h2 class="my-2 text-2xl font-semibold text-center text-gray-900 uppercase">Add a new Product</h2>
         <div id="errors" class="text-red-500"></div>
-        <form action="products/new" method="post" enctype="multipart/form-data" id="addProductForm">
+        <form action="dashboard/new" method="post" enctype="multipart/form-data" id="addProductForm">
             <input type="hidden" name="<?= $this->security->get_csrf_token_name(); ?>" value="<?= $this->security->get_csrf_hash(); ?>" id="csrf_token">
             <div class="mb-4">
                 <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Name: </label>
